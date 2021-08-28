@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaJam Coffee House Jobs</title>
+    <link rel="stylesheet" href="javajam.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>
+                JavaJam Coffee House
+            </h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li>
+                    <!--Comments-->
+                    <a href="index.html">
+                    Home
+                    </a>
+                </li>
+                <li>
+                    <a href="menu.html">
+                    Menu 
+                    </a>
+                </li>
+                <li>
+                    <a href="music.html">
+                    Music
+                    </a>
+                </li>
+                <li>
+                    <a href="jobs.html">
+                    Jobs
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <div id="herojobs">
+
+            </div>
+
+            <h2>
+                Jobs at JavaJam
+            </h2>
+
+            <p>Want to work at JavaJam? Fill out the form below to start your application.</p>
+            <!--<form> = if needed to use form-->
+            <!--form action = needed for a specific function to work-->
+            <!--label for = name of fields-->
+            <!-- URL without 'S' in 'HTTPS' cannot display user entered information-->
+
+            <p> Required fields are marked with an (*). </p>
+
+            <form action="https://webdevbasics.net/scripts/javajam8.php" method="POST">
+                <!--method GET = data entered will be in Inspect>Form Data-->
+                <label for="myName"> Name: </label>
+                <input type="text" id="myName" name="myName" required>
+
+                <label for="myEmail"> Email: </label>
+                <input type="email" id="myEmail" name="myEmail" required>
+
+                <label for="myExperience"> Experience: </label>
+                <textarea required id="myExperience" name="myExperience" rows="2" cols="20"></textarea>
+                <!--Must be submit for input type, not button-->
+                <!--How to make experience a required field? DO NOT PLACE SPACE BETWEEN TEXTAREA-->
+                <input id="mySubmit" type="submit" value="Apply">
+            </form>
+        </main>
+
+        <footer>
+            Copyright &copy; 2018 JavaJam Coffee House <br/>
+            <a href="mailto:danielae-wp21@student.tarc.edu.my
+                ">My Email</a>
+        </footer>
+    </div>
+
+</body>
+
+</html>
